@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a3b520751bf45e2bbe37866e0682d98" Name="Diagram1">
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Crew" Width="1.5" PointX="10.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.CustomerLocation" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Expens" Width="1.5" PointX="7.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.File" Width="1.5" PointX="9.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Location" Width="1.5" PointX="5.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Contact" Width="1.5" PointX="3" PointY="6.625" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.WorkOrderType" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.ProblemReviewComment" Width="1.5" PointX="17.875" PointY="9.75" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.CallCenterEmployee" Width="1.875" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Employee" Width="1.5" PointX="12.75" PointY="3.75" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Employees_Crews" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Bill" Width="1.5" PointX="18" PointY="12.75" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Bills_Expenses" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Customer" Width="1.5" PointX="0.75" PointY="16.125" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Contacts_Customers" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_CustomerLocations_Customers" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Vendor" Width="1.5" PointX="5.375" PointY="6.125" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Bills_Vendors" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Product" Width="1.5" PointX="7.5" PointY="16.25" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Bills_Products" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Files_Products" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Products_Locations" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.PicturesOfProblem" Width="1.5" PointX="17.875" PointY="6.75" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Picture" Width="1.5" PointX="17.25" PointY="18.875" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.InstallationDetailsForWorkOrder" Width="1.5" PointX="12" PointY="22.25" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.WorkOrderDetail" Width="2" PointX="23.25" PointY="19.25" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_InstallationDetailsForWorkOrder_WorkOrderDetails" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrderDetails_Locations" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrderDetails_Products" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Evidence" Width="1.5" PointX="26" PointY="21.5" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Problem" Width="1.5" PointX="26" PointY="17.75" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Evidences_WorkOrderDetails" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Pictures_Evidences" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_PicturesOfProblems_Problems" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_ProblemReviewComments_Problems" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Problems_WorkOrderDetails" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.BillStatusLog" Width="1.75" PointX="20.25" PointY="13.75" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_BillStatusLog_Bills" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.WorkOrder" Width="1.5" PointX="15" PointY="12" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Bills_WorkOrders" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrders_Crews" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrders_Employees" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrders_Vendors" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrderDetails_WorkOrders" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrders_WorkOrderTypes" />
+        <EntityTypeShape EntityType="Sapi_Printel_InstalacionesModel.Project" Width="1.5" PointX="15" PointY="1.875" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Bills_Projects" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Projects_Customers" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Projects_Employees" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Locations_Projects" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_Projects_ToTable" />
+        <AssociationConnector Association="Sapi_Printel_InstalacionesModel.FK_WorkOrder_Projects" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

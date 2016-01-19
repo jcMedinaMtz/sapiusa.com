@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Printel.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="printelstyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form runat="server">
+       
+           <div id="titulo_100pe">
+          <table width="930" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="20" align="left" valign="middle">
+                 
+              </td>
+            </tr>
+          </table>
+        </div><!-- titulo_100pe div ends here -->
+
+        <div id="titlediv">
+            <table width="930" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="20" align="left" valign="middle">
+              <asp:Label CssClass="titlelabel" ID="LblPageTitle" runat="server"></asp:Label>
+              </td>
+              <td height="20" align="right" valign="middle">
+                  <asp:HyperLink ID="HyperLinkToAdminHome" runat="server" Font-Bold="true" ForeColor="White" NavigateUrl="~/AdminHome.aspx">Admin Home</asp:HyperLink>
+              </td>
+           
+            </tr>
+          </table>
+          </div><!-- titulo_100pe div ends here -->
+        <div id="div_top">
+            <div id="logoR">
+                <img src="Images/LogoPrintel.jpg" alt="" width="197" height="80" border="0" />
+            </div>
+          
+            <div id="logout_div">
+                <table width="60" border="0" align="right" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td height="80" align="center" valign="middle">
+                            <asp:Button ID="toHome" runat="server" CausesValidation="false" ToolTip="LogOut" CssClass="btn_home" OnClick="toHome_Click" Text="" />
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--div_top  div ends here -->
+        <br />
+        <div id="welcomediv">
+        <table width="930" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="20" align="left" valign="middle">
+                  <asp:Label ID="LblWelcome" runat="server" CssClass="txt_login2" Text=""></asp:Label>
+              </td>
+                <td height="20" align="right" valign="middle">
+                  <asp:Label ID="LblLoginTime" runat="server" CssClass="txt_login2" Text=""></asp:Label>
+              </td>
+            </tr>
+          </table>
+         </div>
+        <div class="div_100full">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer1">
+            <table width="930" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="930" align="middle" height="10" align="left" valign="middle"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- titulo1 div ends here -->
+        <div id="footer_alt">
+            <div id="logoFoot">
+                <img src="Images/logoSapiG.png" alt="" width="45" height="30" border="0" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

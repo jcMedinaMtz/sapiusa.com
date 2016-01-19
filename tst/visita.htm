@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Alveni Home</title>
+
+<style type="text/css">
+
+body {
+	background:url(img/bg_gnal.png);
+	background-repeat: repeat-x;
+	margin:0px;
+	}
+	
+.titulo {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:15px;
+	font-weight:bold;
+	}
+
+a.btn_ppal{ 
+font-family:Arial, Helvetica, sans-serif;
+color: #333333; 
+text-decoration:none;
+font-size:15px;
+}
+
+.txtgnal{ 
+font-family:Arial, Helvetica, sans-serif;
+color: #333333; 
+text-decoration:none;
+font-size:14px;
+}
+
+a.btn_ppal:hover {
+color: #0057A6;
+}
+
+	
+.footer{ 
+font-family:Arial, Helvetica, sans-serif;
+color: #333333; 
+text-decoration:none;
+font-size:12px;
+}
+
+.form_Form {
+	height:30px;
+	width:250px;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:5px;
+	color: #333;
+	font-size: 12px;
+
+}
+
+
+.form_Form2 {
+	height:25px;
+	width:115px;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:5px;
+	color: #333;
+	font-size: 12px;
+
+}
+
+.form_Form3 {
+	height:60px;
+	width:250px;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:5px;
+	color: #333;
+	font-size: 12px;
+
+}
+
+
+.botonForm {
+    padding: 9px 17px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1;
+   color: #fff;
+   border: none;
+   background-color: #0068AA;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+     -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.botonForm:hover {
+	background-color:#FF6600;
+	cursor: pointer; 
+	color: #333333;
+	  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+</style>
+
+
+
+
+
+<script type="text/javascript" language="JavaScript"><!--
+var MM2K_loaded = false;
+function assignDesc1 (f)
+{
+
+   var objetivo          = f.elements[0].value;
+   var fecha       = f.elements[1].value;
+   var horallegada           = f.elements[2].value;
+   var personafirma     = f.elements[3].value;
+   var ciudad       = f.elements[5].value;
+   var tecnico           = f.elements[6].value;
+  
+     
+   if (objetivo == null || objetivo == "" || objetivo == "1")
+   {
+      alert ("Escriba el objetivo");
+	  document.frmModify.objetivo.focus();
+      return false;
+   }
+   
+    if (fecha == null || fecha == "" || fecha == "1")
+   {
+      alert ("Escriba la fecha");
+	  document.frmModify.fecha.focus();
+      return false;
+   }
+   
+    if (horallegada  == null || horallegada  == "" || horallegada  == "1")
+   {
+      alert ("Por favor escriba la hora de llegada");
+	  document.frmModify.horallegada .focus();
+      return false;
+   }
+ 	
+	
+   if (personafirma == null || personafirma == "" || personafirma == "1")
+     {
+        alert ("Escriba el nombre de la persona que firma");
+  	  document.frmModify.personafirma.focus();
+        return false;
+     }
+	 
+	 
+  if (ciudad == null || ciudad == "" || ciudad == "1")
+     {
+        alert ("Escriba la ciudad");
+  	  document.frmModify.ciudad.focus();
+        return false;
+     }
+	 
+  if (tecnico == null || tecnico == "" || tecnico == "1")
+     {
+        alert ("Escriba el nombre del técnico");
+  	  document.frmModify.tecnico.focus();
+        return false;
+     }
+     else
+     {
+        if (! Validateemail(f.elements[1]) ) return false;
+     }
+
+
+       return true;
+  }
+
+  // -->
+  		</script>
+
+
+
+
+
+</head>
+
+<body>
+<table width="960" background="img/bg_logo.png" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="100" align="center" valign="top"><table width="400" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="85" align="center" valign="middle"><a href="http://www.alveni.com/web/"><img src="img/logo_alv.png" width="171" height="41" border="0" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="800" background="img/titulo_bg_1.png" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="42" align="left" valign="top"><table width="259" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="11" height="28">&nbsp;</td>
+        <td width="248" align="left" valign="middle" class="titulo">Resgistro Visita de Soporte</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top">
+    
+    
+    
+    <table width="610" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+      <tr>
+        <td align="left" valign="top"><table width="610" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="20" >&nbsp;</td>
+          </tr>
+        </table>
+          <table width="610" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              
+              <td width="610" align="center" valign="top"><table width="610" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                  
+                  
+                  <form action="visita_ok.php"  method="post" name="frmModify" id="frmModify" onsubmit="return assignDesc1(this)">
+                  
+                  
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right"><span class="txtgnal">Objetivo:*</span></td>
+                        <td width="20" align="right">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="objetivo" type="text" class="form_Form" size="40" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right"><span class="txtgnal">Fecha:* </span></td>
+                        <td width="20" align="right">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="fecha" type="text" class="form_Form" value="00 / 00 / 00" size="40" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right"><span class="txtgnal">Hora llegada:*</span></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="horallegada" type="text" class="form_Form" value="00:00 hrs" size="40" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right"><span class="txtgnal">Persona que firma:*</span></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="personafirma" type="text" class="form_Form" size="40" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right"><span class="txtgnal">Tienda No.:</span></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="tiendanumero" type="text" class="form_Form" size="40" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right" valign="middle"><span class="txtgnal">Ciudad:*</span></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+
+                        
+                       <input name="ciudad" type="text" class="form_Form" size="40" />
+                       
+                       
+                       
+                       </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="40" align="right"><span class="txtgnal">Técnico en sitio:*</span></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="tecnico" type="text" class="form_Form" size="40" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td><img src="img/blank.png" alt="" width="600" height="8" border="0" /></td>
+                      </tr>
+                </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="230" height="80" align="right" valign="top"><span class="txtgnal">Mensaje adicional:</span></td>
+                        <td width="20">&nbsp;</td>
+                        <td align="left" valign="top">
+                        
+                        
+                        
+                        <textarea name="comentarios" cols="30" rows="4" wrap="virtual" class="form_Form3"></textarea>
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="610" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="250" height="40">&nbsp;</td>
+                        <td align="left" valign="middle">
+                        
+                        
+                        
+                        <input name="submit" type="submit" class="botonForm" value="Enviar" />
+                        
+                        
+                        
+                        </td>
+                      </tr>
+                    </table>
+                  </form></td>
+                </tr>
+              </table></td>
+              
+            </tr>
+          </table>
+          <table width="610" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="20">&nbsp;</td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+      <table width="630" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="14" align="left" valign="bottom"><img src="img/sombra_13.png" alt="" width="630" height="13" /></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<br />
+<table width="960" background="img/sombra.png" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="60" align="center" valign="middle" class="footer">© Alveni 2015</td>
+  </tr>
+</table>
+
+</body>
+</html>

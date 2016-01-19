@@ -1,0 +1,11 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{ margin:0; padding:0; border:0; font-size:100%; font:inherit;}html{overflow-y:scroll}a:hover,a:active{outline:none}nav ul,nav li{margin:0;list-style:none;list-style-image:none}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden}.clearfix:after{clear:both}.clearfix{zoom:1}a{text-decoration:none}#container{width:100%}
+
+#wrapper{
+	width:445px;
+	max-width:445px;
+	min-width:445px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left:0;
+}

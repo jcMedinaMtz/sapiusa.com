@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="adf201a59205413092daf9cb041a8134" Name="Diagram1" ZoomLevel="75">
+        <EntityTypeShape EntityType="Model.Addresses" Width="1.5" PointX="3.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Customer" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EmployeeTable" Width="1.5" PointX="3.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProductionOrderHeader" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProductPriceHistory" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tbl_AdjustmentDetail" Width="1.5" PointX="13" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tbl_AdjustmentHeader" Width="1.5" PointX="10.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProductionEntryDetail" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Product_Materials" Width="1.5" PointX="6" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tbl_ReceivingDetail" Width="1.5" PointX="8" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tbl_ReceivingHeader" Width="1.5" PointX="5.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tbl_TransferDetail" Width="1.5" PointX="11" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Tbl_TransferHeader" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Warehouse" Width="1.5" PointX="1.5" PointY="25.125" IsExpanded="true" />
+        <AssociationConnector Association="Model.fk_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.fk_ProductionOrderHeader_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.fk_ProductionOrderHeader_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.fk_ReceivingDetail_ProductionOrderHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tbl_AdjustmentDetail_Tbl_AdjustmentHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tbl_ReceivingDetail_Tbl_ReceivingHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Tbl_TransferDetail_Tbl_TransferHeader" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Material" Width="1.5" PointX="6.375" PointY="1" />
+        <AssociationConnector Association="Model.fk_CostID" />
+        <AssociationConnector Association="Model.fk_MaterialId" />
+        <EntityTypeShape EntityType="Model.CustomerOrderHeader" Width="2.375" PointX="3.75" PointY="41" />
+        <AssociationConnector Association="Model.fk_orderheader_customers" />
+        <EntityTypeShape EntityType="Model.CustomerOrderDetail" Width="2.125" PointX="8.875" PointY="26.375" />
+        <AssociationConnector Association="Model.fk_orderdetail_orderheader" />
+        <EntityTypeShape EntityType="Model.ProductInventory" Width="1.5" PointX="5.75" PointY="18.25" />
+        <AssociationConnector Association="Model.FK__Tbl_Inven__Wareh__656C112C" />
+        <EntityTypeShape EntityType="Model.Tbl_SaleDetail" Width="1.5" PointX="6" PointY="32.5" />
+        <EntityTypeShape EntityType="Model.ProductionOrderDetail" Width="2.25" PointX="8.875" PointY="21.125" />
+        <AssociationConnector Association="Model.fk_ProductionOrderHeader_CustomerOrderHeader" />
+        <AssociationConnector Association="Model.fk_ProductionOrderId" />
+        <AssociationConnector Association="Model.FK_Tbl_ProductionOrderDetail_Tbl_ProductionOrderHeader" />
+        <EntityTypeShape EntityType="Model.ProductionEntry" Width="1.5" PointX="6" PointY="23.75" />
+        <AssociationConnector Association="Model.FK__Tbl_Produ__Entry__3C34F16F" />
+        <AssociationConnector Association="Model.FK__Tbl_Produ__Wareh__40058253" />
+        <EntityTypeShape EntityType="Model.Product" Width="1.5" PointX="0.75" PointY="17" />
+        <AssociationConnector Association="Model.fk_ItemId" />
+        <AssociationConnector Association="Model.fk_ItemNo" />
+        <AssociationConnector Association="Model.fk_inventory_itemno" />
+        <AssociationConnector Association="Model.fk_orderdetail_Products" />
+        <AssociationConnector Association="Model.fk_productId" />
+        <EntityTypeShape EntityType="Model.LoanHeader" Width="1.5" PointX="3.75" PointY="34.875" />
+        <AssociationConnector Association="Model.fk_Loan_CustomerID" />
+        <EntityTypeShape EntityType="Model.ReturnHeader" Width="1.5" PointX="3.75" PointY="45" />
+        <AssociationConnector Association="Model.fk_Return_CustomerID" />
+        <EntityTypeShape EntityType="Model.LoanDetail" Width="1.5" PointX="6" PointY="36.625" />
+        <AssociationConnector Association="Model.FK_Tbl_LoanDetail_Tbl_LoanHeader" />
+        <EntityTypeShape EntityType="Model.ReturnDetail" Width="1.5" PointX="6" PointY="45.125" />
+        <AssociationConnector Association="Model.FK_Tbl_ReturnDetail_Tbl_ReturnHeader" />
+        <EntityTypeShape EntityType="Model.ProductionEntryHeader" Width="2" PointX="8.25" PointY="15" />
+        <AssociationConnector Association="Model.fk_ProdId" />
+        <AssociationConnector Association="Model.FK__Tbl_Produ__Entry__3F115E1A" />
+        <AssociationConnector Association="Model.fk_ProductionEntryId" />
+        <EntityTypeShape EntityType="Model.Tbl_SaleHeader" Width="1.5" PointX="3.75" PointY="10.625" />
+        <AssociationConnector Association="Model.fk_CustomerID1" />
+        <AssociationConnector Association="Model.FK_Tbl_SaleDetail_Tbl_SaleHeader" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,795 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+
+
+
+@font-face {
+    font-family: 'nexa_regularregular';
+    src: url('font/nexaregular-webfont.eot');
+    src: url('font/nexaregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nexaregular-webfont.woff') format('woff'),
+         url('font/nexaregular-webfont.ttf') format('truetype'),
+         url('font/nexaregular-webfont.svg#nexa_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('font/nexa-light-webfont.eot');
+    src: url('font/nexa-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nexa-light-webfont.woff') format('woff'),
+         url('font/nexa-light-webfont.ttf') format('truetype'),
+         url('font/nexa-light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'din_blackregular';
+    src: url('font/din_black-webfont.eot');
+    src: url('font/din_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din_black-webfont.woff') format('woff'),
+         url('font/din_black-webfont.ttf') format('truetype'),
+         url('font/din_black-webfont.svg#din_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_blackregular';
+    src: url('font/nexablack-webfont.eot');
+    src: url('font/nexablack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/nexablack-webfont.woff') format('woff'),
+         url('font/nexablack-webfont.ttf') format('truetype'),
+         url('font/nexablack-webfont.svg#nexa_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'din_alternate_mediumregular';
+    src: url('font/din_alternate_medium-webfont.eot');
+    src: url('font/din_alternate_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din_alternate_medium-webfont.woff') format('woff'),
+         url('font/din_alternate_medium-webfont.ttf') format('truetype'),
+         url('font/din_alternate_medium-webfont.svg#din_alternate_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*DEMO____________________________________________*/
+
+
+.demo_nexa_regular {
+	font-family: 'nexa_regularregular';
+	font-size:16px;
+}
+
+.demo_nexa_lightregular {
+	font-family: 'nexa_lightregular';
+	font-size:16px;
+}
+
+.demo_din_blackregular {
+	font-family: 'din_blackregular';
+	font-size:16px;
+}
+
+.demo_nexa_blackregular {
+	font-family: 'nexa_blackregular';
+	font-size:16px;
+}
+
+.demo_din_alternate_mediumregular {
+	font-family: 'din_alternate_mediumregular';
+	font-size:16px;
+}
+
+
+
+/*TABLAS____________________________________________*/
+
+.footer_table {
+	background-image: url(img/sombra_footer.png);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+.servicescont_table {
+	background-image: url(img/sombra_960.png);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+.take_control {
+	background-image: url(img/take-control-of.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+	background-color:#16904B;
+}
+
+.tabla_story {
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+
+}
+
+
+
+/*DIVS____________________________________________*/
+
+
+#botonera_ppal {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 109px;
+	z-index: 1000;
+	border: none;
+}
+
+#fondo_botonera_ppal {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 109px;
+	z-index: 998;
+	border: none;
+	background-image:url(img/bg_botonera.png);
+}
+
+#banner_home {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 520px;
+	z-index: 0;
+	border: none;
+}
+
+#banner_interior_about {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background:url(img/banner_about.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_interior_services {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background:url(img/banner_services.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_interior_clients {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background:url(img/banner_clients.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_sitemap {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background: url(img/banner_map.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_development {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background: url(img/banner_banner_development.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_automation {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background: url(img/banner_banner_automation.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_mobile {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background: url(img/banner_mobile.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+#banner_contact {
+	position: absolute;
+	top: 79px;
+	width: 100%;
+	height: 310px;
+	z-index: 0;
+	border: none;
+	background: url(img/banner_contact.jpg);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+
+#indicadores {
+	position: absolute;
+	left: 50%;
+	top: 79px;
+	width: 960px;
+	height: 30px;
+	margin-left: -480px;
+	z-index: 999;
+	border: none;
+}
+
+#indicador_1 {
+	position: absolute;
+	top: 0px;
+	left: 440px;
+	width: 74px;
+	height: 30px;
+	z-index: 0;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+
+#indicador_2 {
+	position: absolute;
+	top: 0px;
+	left: 513px;
+	width: 74px;
+	height: 30px;
+	z-index: 1;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+
+#indicador_3 {
+	position: absolute;
+	top: 0px;
+	left: 588px;
+	width: 74px;
+	height: 30px;
+	z-index: 1;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+
+#indicador_4 {
+	position: absolute;
+	top: 0px;
+	left: 663px;
+	width: 74px;
+	height: 30px;
+	z-index: 1;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+
+#indicador_5 {
+	position: absolute;
+	top: 0px;
+	left: 737px;
+	width: 74px;
+	height: 30px;
+	z-index: 1;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+
+#indicador_6 {
+	position: absolute;
+	top: 0px;
+	left: 811px;
+	width: 74px;
+	height: 30px;
+	z-index: 1;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+#indicador_7 {
+	position: absolute;
+	top: 0px;
+	left: 885px;
+	width: 74px;
+	height: 30px;
+	z-index: 1;
+	border: none;
+	background-image:url(img/indicador.png);
+}
+
+#ver_video_cont {
+	position: absolute;
+	left: 50%;
+	top: 263px;
+	width: 960px;
+	height: 146px;
+	margin-left: -480px;
+	z-index: 1001;
+	border: none;
+}
+
+#bajos_home {
+	position: absolute;
+	top: 410px;
+	width: 100%;
+	height: 403px;
+	z-index: 1001;
+	border: none;
+	background-image:url(img/bg_bajos_home.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#contenedor_interior_general {
+	position: absolute;
+	top: 290px;
+	width: 100%;
+	height: 403px;
+	z-index: 1000;
+	border: none;
+	background-image:url(img/bg_interior.png);
+	background-position: top center;
+	background-repeat:no-repeat;
+}
+
+/*   ENLACES   */
+
+
+a.btn_ppal {
+font-family: 'din_alternate_mediumregular';
+color: #FFF;
+text-decoration:none;
+font-size:14px;
+}
+
+a.btn_ppal:hover {
+color: #30E080;
+}
+
+
+
+
+a.btn_bajos_home {
+font-family: 'nexa_regularregular';
+color: #394C52;
+text-decoration:none;
+font-size:19px;
+line-height:18px;
+}
+
+a.btn_bajos_home:hover {
+color: #16904B;
+text-decoration:underline;
+}
+
+
+
+
+
+a.btn_head_liga {
+font-family: 'nexa_regularregular';
+color: #394C52;
+text-decoration:none;
+font-size:14px;
+line-height:18px;
+}
+
+a.btn_head_liga:hover {
+color: #16904B;
+}
+
+a.btn_head_liga:active {
+color: #394C52;
+text-decoration:none;
+}
+
+a.btn_head_liga:visited {
+color: #394C52;
+text-decoration:none;
+}
+
+
+
+
+
+a.btn_redacta_bold {
+	font-family: din_alternate_mediumregular;
+	color: #16904B;
+	font-size:15px;
+	text-decoration: none;
+	line-height:18px;
+}
+
+a.btn_redacta_bold:hover {
+color: #394C52;
+text-decoration:none;
+text-decoration:underline;
+}
+
+
+
+
+
+a.btn_redacta_bold_2au {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:15px;
+line-height:18px;
+text-decoration: none;
+}
+
+a.btn_redacta_bold_2au:hover {
+color: #16904B;
+text-decoration:underline;
+}
+
+
+
+
+a.btn_mail_perso {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:13px;
+text-decoration:none;
+line-height:18px;
+}
+
+a.btn_mail_perso:hover {
+color: #16904B;
+text-decoration: underline;
+}
+
+
+
+
+a.btn_about_back {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:22px;
+line-height:22px;
+text-decoration:none;
+}
+
+a.btn_about_back:hover {
+color: #16904B;
+text-decoration:none;
+}
+
+
+
+a.btn_footer_link {
+font-family: 'nexa_regularregular';
+color: #FFF;
+font-size:12px;
+line-height:22px;
+text-decoration:none;
+}
+
+a.btn_footer_link:hover {
+color: #16904B;
+text-decoration: underline;
+}
+
+
+/*   TEXT   */
+
+
+.bajos-home-descripcion {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:13px;
+}
+
+.bajos-home-descripcion_lista {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:14px;
+line-height:18px;
+}
+
+.take {
+font-family: 'nexa_regularregular';
+color: #16904B;
+font-size:30px;
+}
+
+.of {
+font-family: 'nexa_regularregular';
+color: #16904B;
+font-size:30px;
+}
+
+.titulo_bajos {
+font-family: 'nexa_regularregular';
+color: #FFF;
+font-size:17px;
+}
+
+.text_bajos_desc {
+font-family: 'nexa_regularregular';
+color: #FFF;
+font-size:14px;
+}
+
+.footer_text {
+font-family: 'nexa_regularregular';
+color: #FFF;
+font-size:11px;
+}
+
+.text_head_tel {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:12px;
+}
+
+.banner_interiortexto {
+font-family: 'nexa_lightregular';
+color: #394C52;
+font-size:25px;
+}
+
+.text_titulos_secciones_int {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:22px;
+line-height:22px;
+}
+
+.text_interior_redaccta {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:14px;
+}
+
+.text_interior_redaccta_espaciado {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:14px;
+margin-left:13px;
+}
+
+.text_interior_redaccta_blanco {
+font-family: 'nexa_regularregular';
+color: #FFF;
+font-size:14px;
+}
+
+.text_interior_redaccta_green {
+font-family: 'nexa_blackregular';
+color: #16904B;
+font-size:14px;
+}
+
+.text_interior_small {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:11px;
+}
+
+.text_interior_redaccta_bold {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:17px;
+line-height:40px
+}
+
+.text_interior_redaccta_bold_300 {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:17px;
+}
+
+.text_interior_redaccta_bold_22 {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:21px;
+}
+
+.text_interior_redaccta_bold_22_blanco {
+font-family: 'nexa_blackregular';
+color: #FFF;
+font-size:21px;
+}
+
+.text_interior_redaccta_bold_var_blanco {
+font-family: 'nexa_regularregular';
+color: #FFF;
+font-size:19px;
+}
+
+.text_interior_redactasubtitle {
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:19px;
+}
+
+.text_interior_redactasubtitle_green {
+font-family: 'nexa_regularregular';
+color: #16904B;
+font-size:19px;
+}
+
+.tools_txt {
+font-family: 'nexa_regularregular';
+color: #16904B;
+font-size:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- estilos para los ul y li del formulario ---*/
+.contact_form ul {
+    width:450px;
+    list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+.contact_form li{
+	padding:2px;
+	position:relative;
+}
+.contact_form label {
+
+    display: inline-block;
+    float: left;
+font-family: 'nexa_regularregular';
+color: #394C52;
+font-size:14px;
+    margin-top: 6px;
+    padding: 1px;
+    width: 90px;
+}
+.contact_form input {
+	height:20px;
+	width:220px;
+	padding:5px 8px;
+}
+.contact_form textarea {
+	padding:8px;
+	width:220px;
+}
+.contact_form button {
+	margin-left:90px;
+}
+
+/*----- estilos visuales de los elementos --------*/
+
+.contact_form input, .contact_form textarea {
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+	color: #888;
+	font-size: 12px;
+	padding-right:30px;
+	-moz-transition: padding .25s;
+	-webkit-transition: padding .25s;
+	-o-transition: padding .25s;
+	transition: padding .25s;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+	background: #fff;
+	border:1px solid #555;
+	box-shadow: 0 0 3px #aaa;
+	padding-right:100px;
+}
+
+/* === Estilos de Validacion === */
+
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+/* === Estilos del boton de Envio === */
+button.submit {
+    padding: 9px 17px;
+   font-family:'nexa_regularregular';
+   line-height: 1;
+   color: #444;
+   border: none;
+   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+   background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+   background-color: #fff;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+button.submit:hover {
+	opacity:.80;
+	cursor: pointer;
+	color: #333;
+}
+button.submit:active {
+	border: 1px solid #222;
+	box-shadow: 0 0 10px 5px #444 inset;
+}

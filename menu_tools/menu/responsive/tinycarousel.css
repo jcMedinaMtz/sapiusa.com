@@ -1,0 +1,31 @@
+/* Tiny Carousel */
+#slider1 { height: 1%; margin: 0px 0 0; overflow:hidden; position: relative; padding: 0 36px 0px;   }
+#slider1 .viewport { height: 85px; overflow: hidden; position: relative; }
+#slider1 .buttons {
+    background: #158E4A;
+    border-radius: 35px;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+}
+#slider1 .next {
+    right: 0;
+    left: auto;
+    top: 30%;
+}
+#slider1 .buttons:hover{
+    color: #FFF;
+    background: #3A4C53;
+}
+#slider1 .disable { visibility: hidden; }
+#slider1 .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: 186px; left: 0 top: 0; }
+#slider1 .overview li{ float: left; margin: 0 0px 0 0; padding: 0px; height: 84px; border: 0px; width: 186px;}
