@@ -191,7 +191,7 @@ body {
 	height: 310px;
 	z-index: 0;
 	border: none;
-	/*background:url(img/banner_services.jpg);*/
+	background:url(img/banner_map.jpg);
   background-color: #ccc;
 	background-position: top center;
 	background-repeat:no-repeat;
@@ -272,16 +272,18 @@ body {
 
 
 #indicadores {
-	position: absolute;
+/*	position: absolute;
 	left: 50%;
 	top: 79px;
 	width: 960px;
 	height: 30px;
 	margin-left: -480px;
 	z-index: 999;
-	border: none;
+	border: none;*/
+  display: none;
+  visibility: hidden;
 }
-
+/*
 #indicador_1 {
 	position: absolute;
 	top: 0px;
@@ -356,7 +358,7 @@ body {
 	z-index: 1;
 	border: none;
 	background-image:url(img/indicador.png);
-}
+}*/
 
 #ver_video_cont {
 	position: absolute;
@@ -405,6 +407,11 @@ font-size:14px;
 
 a.btn_ppal:hover {
 color: #30E080;
+}
+
+.botonera .button:hover{
+  background-color: transparent;
+  background-image:url(img/indicador.png);
 }
 
 
@@ -806,4 +813,42 @@ button.submit:hover {
 button.submit:active {
 	border: 1px solid #222;
 	box-shadow: 0 0 10px 5px #444 inset;
+}
+
+.img-container {
+  overflow: hidden;
+  width: 200px;
+  height: 230px;
+  margin: 20px auto;
+  border: solid 3px rgba(110, 110, 110, .5);
+  box-shadow: 0 0 10px 0px rgba(0,0,0,.25);
+}
+
+.img-container a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-container .feedlots {
+  background-image: url('img/cattle/1_feedlots.jpg');
+}
+
+.img-container .slaughter {
+  background-image: url('img/cattle/2_slaughter.jpg');
+}
+
+.img-container .markets {
+  background-image: url('img/cattle/3_markets.jpg');
+}
+
+.img-container .distributors {
+  background-image: url('img/cattle/4_distributors.jpg');
+  background-position: right;
 }
