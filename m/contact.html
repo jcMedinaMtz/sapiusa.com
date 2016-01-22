@@ -22,30 +22,30 @@ function assignDesc1 (f)
    var email       = f.elements[1].value;
    var tel           = f.elements[2].value;
    var comments     = f.elements[4].value;
-  
-     
+
+
    if (name == null || name == "" || name == "1")
    {
       alert ("Write down your full name");
 	  document.frmModify.name.focus();
       return false;
    }
-   
+
     if (tel == null || tel == "" || tel == "1")
    {
       alert ("Write down your telephone");
 	  document.frmModify.tel.focus();
       return false;
    }
-   
+
     if (comments == null || comments == "" || comments == "1")
    {
       alert ("Please write your comments");
 	  document.frmModify.comments.focus();
       return false;
    }
- 	
-	
+
+
    if (email == null || email == "" || email == "1")
      {
         alert ("Write down your email address");
@@ -109,37 +109,38 @@ function assignDesc1 (f)
 					</div>
 					<div class="menu">
 						<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" width="32" height="32" /> </a>
-								
-                                
+
+
                                 <ul class="nav" id="nav">
 								  <li><a href="index.html" class="scroll">Home</a></li>
 								  <li><a href="about-us.html" class="scroll">About us</a></li>
 								  <li><a href="services.html" class="scroll">Services</a></li>
+                  <li><a href="cattlemanagement.html" class="scroll">Cattle Management</a></li>
 								  <li><a href="meet­us.html" class="scroll">Our team</a></li>
                                   <li><a href="clients.html" class="scroll">Clients</a></li>
-								  <li  class="current"><a href="contact.html" class="scroll">Contact</a></li>								
+								  <li  class="current"><a href="contact.html" class="scroll">Contact</a></li>
 								</ul>
 				  </div>
 				</div>
 			</div>
 		<!-- Header ends here -->
-        
-        
-        
-        
-        
 
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
 		<!-- Features starts here -->
 		<div class="container">
 			<div class="contact">
 				<h3> Looking for a solution?</h3>
 				<p>
-                
+
                 Sapi LLC<br>
                 12012 Technology Blvd.<br>
                 Ste. 101<br>
@@ -150,25 +151,25 @@ function assignDesc1 (f)
                 To receive more information about our company, products and/or services, please fill out the following online form.
               <div class="row">
 					<div class="col-md-8 contact-column">
-                    
-                    
-						 
+
+
+
                          <form action="mensaje_enviado.php"  method="post" name="frmModify" id="frmModify" onsubmit="return assignDesc1(this)">
-                         
+
 					<div class="contact-to">
-                    
-                    
+
+
                      	<input type="text" class="text" value="Name" name="name" id="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name...';}">
-                        
+
                         <input type="text" class="text" value="Email" name="email" id="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email...';}">
-                        
+
                         <input type="text" class="text" value="Phone" name="tel" id="tel" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'tel...';}">
-                        
+
 					 	<input type="text" class="text" value="Company" name="TXT_Company" id="TXT_Company" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'TXT_Company...';}">
-                        
-                        
-					 	
-                        
+
+
+
+
 					</div>
 					<div class="text2">
 	                   <textarea value="Message:" name="TXT_Information" id="TXT_Information" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
@@ -178,7 +179,7 @@ function assignDesc1 (f)
 	                </div>
 	                <div class="clear"> </div>
 	               </form>
-                   
+
 
 					</div></p>
 			  </div>
@@ -196,18 +197,18 @@ function assignDesc1 (f)
 							<a href="https://plus.google.com/109067847337063561910/posts"><i class="fa3"> </i></a>
 						<a href="http://www.linkedin.com/company/sapi?goback=.nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1&trk=company_logo"><i class="fa4"> </i></a></div>
 					</div>
-                    
-                    
+
+
 					<div class="col-md-3 footer-row-left">
 						<div class="social-media"><span class="content-row-column-in"><a href="mailto:info@sapiusa.com">info@sapiusa.com</a></span></div>
 					</div>
-                    
-                    
+
+
                     <div class="col-md-3 footer-row-left">
 						<div class="social-media"><span class="content-row-column-in"><a href="#">+1 (512) 213 0115</a></span></div>
 					</div>
-                    
-                    
+
+
 					<div class="col-md-6 footer-row-left"></div>
 					<div class="clearfix"></div>
 				</div>
@@ -215,6 +216,6 @@ function assignDesc1 (f)
 			</div>
 		</div>
 		<!-- Footer ends here-->
-		
+
 		</body>
 </html>
