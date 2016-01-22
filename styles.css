@@ -193,7 +193,7 @@ body {
 	border: none;
 	background:url(img/cattle/cattleTopBg.png);
   background-color: #ccc;
-	background-position: top right;
+	background-position: top center;
 	background-repeat:no-repeat;
   background-size: contain;
 }
@@ -819,13 +819,19 @@ button.submit:active {
 .img-container {
   overflow: hidden;
   width: 200px;
-  height: 230px;
-  margin: 20px auto;
+  height: 160px;
+  margin: 15px auto;
   border: solid 3px rgba(110, 110, 110, .5);
   box-shadow: 0 0 10px 0px rgba(0,0,0,.25);
 }
 
-.img-container a {
+.img-container.big {
+  width: 99%;
+  height: 370px;
+  margin: 15px auto;
+}
+
+.img-container a, .img-container span {
   position: relative;
   display: block;
   width: 100%;
