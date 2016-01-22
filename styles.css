@@ -193,8 +193,9 @@ body {
 	border: none;
 	background:url(img/cattle/cattleTopBg.png);
   background-color: #ccc;
-	background-position: top center;
+	background-position: top right;
 	background-repeat:no-repeat;
+  background-size: contain;
 }
 
 
